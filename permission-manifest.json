@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "project": "13-rate-limiter",
+  "runtime": {
+    "kind": "node",
+    "minVersion": "22",
+    "dependencies": 0
+  },
+  "network": {
+    "required": false,
+    "hosts": []
+  },
+  "secrets": [],
+  "environment": [],
+  "filesystem": [
+    {
+      "scope": "read",
+      "path": "this repository"
+    },
+    {
+      "scope": "write",
+      "path": "OS temp directory where the demo needs it"
+    }
+  ],
+  "processes": {
+    "spawns": [],
+    "reason": "none"
+  },
+  "github": {
+    "workflowPermissions": {
+      "contents": "read"
+    },
+    "reason": "CI only reads the repository"
+  },
+  "humanApprovalRequiredFor": [
+    "changing a limit or a policy default in src/index.mjs"
+  ]
+}

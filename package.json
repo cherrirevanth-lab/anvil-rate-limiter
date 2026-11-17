@@ -1,0 +1,16 @@
+{
+  "name": "@anvil/rate-limiter",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Exact token buckets with honest 429 retryAfterMs and queue-depth backpressure.",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test test/",
+    "start": "node src/cli.mjs",
+    "verify": "node verify.mjs"
+  },
+  "license": "MIT"
+}
